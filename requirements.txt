@@ -1,5 +1,5 @@
-# Das sind die Python-Bibliotheken für die Notebooks
-# Diese sind insbesonde für mybinder.org relevant
+# Das sind die Python-Bibliotheken fÃ¼r die Notebooks
+# Diese sind insbesonde fÃ¼r mybinder.org relevant
 pandas==0.23.4
 matplotlib
 py2neo
