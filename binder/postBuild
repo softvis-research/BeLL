@@ -1,0 +1,19 @@
+#!/bin/bash
+
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
+
+# Jupyter/Jupyterlab extension for proxying internal applications
+jupyter serverextension enable --sys-prefix jupyter_server_proxy
+jupyter labextension install jupyterlab-server-proxy --no-build 
+
+# Table of contents Jupyter Lab Extension
+jupyter labextension install @jupyterlab/toc --no-build 
+
+# Building Jupyter Lab
+jupyter lab build --dev
+
+###############################################################
+#          /jupyter/jupyterlab extensions/kernels             #
+###############################################################
