@@ -3,5 +3,6 @@
 jupyter-server-proxy
 pandas==0.23.4
 matplotlib
+neo4j
 py2neo
 pygal

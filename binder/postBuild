@@ -1,19 +1,17 @@
 #!/bin/bash
 
-###############################################################
-#          jupyter/jupyterlab extensions/kernels              #
-###############################################################
+if [ ! -f neo4j-community-3.5.8-unix.tar.gz ]; then
+  wget http://dist.neo4j.org/neo4j-community-3.5.8-unix.tar.gz
+fi
 
-# Jupyter/Jupyterlab extension for proxying internal applications
-jupyter serverextension enable --sys-prefix jupyter_server_proxy
-jupyter labextension install jupyterlab-server-proxy --no-build 
+tar -xvf neo4j-community-3.5.8-unix.tar.gz
 
-# Table of contents Jupyter Lab Extension
-# jupyter labextension install @jupyterlab/toc --no-build 
+# Not sure if the neo4j web UI is working via the proxy
+# This should allow the db to listen if it does...
+# Comment it out if you'd rather be a bit more secure
+echo "dbms.connectors.default_listen_address=0.0.0.0" >> neo4j-community-3.5.8/conf/neo4j.conf
 
-# Building Jupyter Lab
-# jupyter lab build --dev
-
-###############################################################
-#          /jupyter/jupyterlab extensions/kernels             #
-###############################################################
+# neo4j has aa default password: neo4j
+# However, if you log in with that, the session will soon time out
+# and you will be required to update the original default password 
+neo4j-community-3.5.8/bin/neo4j-admin set-initial-password neo4jbinder
