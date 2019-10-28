@@ -1,6 +1,8 @@
 # Das sind die Python-Bibliotheken für die Notebooks
 # Diese sind insbesonde für mybinder.org relevant
+jupyter-server-proxy
 pandas==0.23.4
 matplotlib
+neo4j
 py2neo
 pygal
