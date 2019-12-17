@@ -17,3 +17,7 @@ echo "dbms.connectors.default_listen_address=0.0.0.0" >> neo4j-community-3.5.8/c
 neo4j-community-3.5.8/bin/neo4j-admin set-initial-password neo4j
 mkdir -p neo4j-community-3.5.8/data/databases/graph.db
 neo4j-community-3.5.8/bin/neo4j-admin load --from=Daten/junit.dump --force
+
+# enable dashboard extension
+jupyter nbextension install --py jupyter_dashboards --sys-prefix
+jupyter nbextension enable --py jupyter_dashboards --sys-prefix
