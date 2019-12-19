@@ -6,3 +6,4 @@ matplotlib
 neo4j
 py2neo
 pygal
+jupyter_dashboards
