@@ -7,3 +7,4 @@ neo4j
 py2neo
 pygal
 jupyter_dashboards
+jupyter_dashboards_bundlers
