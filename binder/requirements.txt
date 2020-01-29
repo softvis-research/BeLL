@@ -6,5 +6,5 @@ matplotlib
 neo4j
 py2neo
 pygal
+notebook>5.2
 jupyter_dashboards
-jupyter_dashboards_bundlers
