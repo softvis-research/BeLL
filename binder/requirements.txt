@@ -6,6 +6,6 @@ matplotlib
 neo4j
 py2neo
 pygal
-notebook==5.5
+notebook==6.4.10
 jupyter_dashboards
 tornado==5.1.1
